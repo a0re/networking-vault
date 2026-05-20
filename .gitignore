@@ -1,6 +1,5 @@
 node_modules/
 .obsidian/
-networking-notes-raw/
 .DS_Store
 *.local
 public/
