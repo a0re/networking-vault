@@ -3,3 +3,7 @@ node_modules/
 networking-notes-raw/
 .DS_Store
 *.local
+public/
+.quartz-cache/
+tsconfig.tsbuildinfo
+prof/
