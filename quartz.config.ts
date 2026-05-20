@@ -14,7 +14,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     locale: "en-US",
     baseUrl: "networking-vault.vercel.app",
-    ignorePatterns: ["networking-notes-raw", ".obsidian"],
+    ignorePatterns: [".obsidian"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
