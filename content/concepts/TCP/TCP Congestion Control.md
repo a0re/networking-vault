@@ -197,4 +197,5 @@ This had problems — the "fix on first drop" approach was too crude. The modern
 - [[TCP Window Size and Sliding Window]] — The receiver window (`rwnd`) side of flow control
 - [[TCP vs UDP Traffic Behaviour]] — How UDP's lack of congestion control interacts with TCP
 - [[TCP Sequence and Acknowledgement Numbers]] — ACKs drive the cwnd increments
+- [[Week 11a]] — Transport Layer fundamentals, port numbers
 - [[Week 12b]] — Parent note

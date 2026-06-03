@@ -139,4 +139,5 @@ bytes_in_flight ≤ min(rwnd, cwnd)
 - [[TCP Sequence and Acknowledgement Numbers]] — Sequence numbers drive the window mechanics
 - [[TCP Congestion Control]] — The other half of window management (cwnd)
 - [[TCP Three-Way Handshake]] — Initial window size is advertised in the SYN
+- [[Week 11a]] — Transport Layer fundamentals, port numbers
 - [[Week 12b]] — Parent note

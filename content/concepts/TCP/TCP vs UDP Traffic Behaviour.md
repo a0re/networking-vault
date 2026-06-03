@@ -147,4 +147,5 @@ Notable modern algorithms:
 
 - [[TCP Congestion Control]] — The mechanisms TCP uses to back off
 - [[TCP Window Size and Sliding Window]] — Flow control from the receiver's perspective
+- [[Week 11b]] — UDP protocol (no congestion control)
 - [[Week 12b]] — Parent note

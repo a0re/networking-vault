@@ -156,4 +156,6 @@ Despite their differences, both TCP and UDP use **port numbers** to multiplex mu
 - [[TCP Header Format]] — Full breakdown of TCP's header fields
 - [[TCP vs UDP Traffic Behaviour]] — What happens when they share a congested link
 - [[TCP Congestion Control]] — Why TCP backs off and UDP does not
+- [[Week 11a]] — Transport Layer fundamentals, port numbers
+- [[Week 11b]] — UDP protocol details
 - [[Week 12a]] — Parent note

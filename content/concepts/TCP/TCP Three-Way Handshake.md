@@ -111,4 +111,5 @@ From the lecture slides (Wireshark capture of a real HTTP handshake):
 
 - [[TCP Connection Termination]] — How the connection is gracefully closed
 - [[TCP Sequence and Acknowledgement Numbers]] — What the ISNs are used for during data transfer
+- [[Week 11a]] — Transport Layer fundamentals, port numbers
 - [[Week 12b]] — Parent note

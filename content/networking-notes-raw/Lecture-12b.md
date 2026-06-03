@@ -200,3 +200,5 @@ UDP has **no congestion control**:
 - [[TCP vs UDP Traffic Behaviour]] — How the two protocols interact under congestion
 - [[Wireless Networking]] — CSMA/CA: the Layer 2 collision avoidance analogue
 - [[Lecture-02b]] — Ethernet, CSMA/CD, MAC addressing
+- [[Week 11a]] — Transport Layer fundamentals, port numbers
+- [[Week 11b]] — UDP protocol (congestion behaviour contrast)

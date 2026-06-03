@@ -32,6 +32,16 @@ tags: [networking, index]
 - [[IPv4 Routing]]
 - [[Inter-VLAN Routing]]
 
+### Layer 4 - Transport
+- [[TCP Header Format]]
+- [[TCP Three-Way Handshake]]
+- [[TCP Connection Termination]]
+- [[TCP Sequence and Acknowledgement Numbers]]
+- [[TCP Window Size and Sliding Window]]
+- [[TCP Congestion Control]]
+- [[TCP vs UDP]]
+- [[TCP vs UDP Traffic Behaviour]]
+
 ### Wireless
 - [[Wireless Networking]]
 - [[Wireless Security]]
@@ -56,6 +66,10 @@ tags: [networking, index]
 | [[Week 9]] | Link Aggregation, EtherChannel |
 | [[Week 9b]] | Wireless networking, Wireless security |
 | [[Week 10]] | IPv6 addressing |
+| [[Week 11a]] | Transport Layer fundamentals, port numbers, multiplexing |
+| [[Week 11b]] | UDP protocol — connectionless transport, header format, use cases |
+| [[Week 12a]] | TCP — reliable, connection-oriented transport, header, flow control intro |
+| [[Week 12b]] | TCP in depth — handshake, termination, windowing, congestion control, TCP vs UDP |
 
 ---
 

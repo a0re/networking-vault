@@ -132,3 +132,8 @@ See → [[TCP Sequence and Acknowledgement Numbers]]
 - [[TCP Window Size and Sliding Window]] — Flow control mechanics
 - [[TCP Congestion Control]] — Slow Start, Congestion Avoidance
 - [[TCP vs UDP Traffic Behaviour]] — Protocol comparison under congestion
+
+## Prerequisites
+
+- [[Week 11a]] — Transport Layer fundamentals, port numbers, multiplexing
+- [[Week 11b]] — UDP protocol (contrast with TCP)

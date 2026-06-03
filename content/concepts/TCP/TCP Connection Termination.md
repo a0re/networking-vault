@@ -100,4 +100,5 @@ RST terminates both directions immediately — no four-step process, no TIME_WAI
 
 - [[TCP Three-Way Handshake]] — How the connection is opened
 - [[TCP Sequence and Acknowledgement Numbers]] — How FIN consumes a sequence number
+- [[Week 11a]] — Transport Layer fundamentals, port numbers
 - [[Week 12b]] — Parent note

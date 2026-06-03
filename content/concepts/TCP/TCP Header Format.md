@@ -158,4 +158,5 @@ The additional fields are precisely what enable TCP's reliability, ordering, and
 - [[TCP Three-Way Handshake]] — Which flags are set at each handshake step
 - [[TCP Connection Termination]] — How FIN and RST flags are used
 - [[TCP Congestion Control]] — How cwnd interacts with the advertised window
+- [[Week 11a]] — Transport Layer fundamentals, port numbers
 - [[Week 12a]] — Parent note

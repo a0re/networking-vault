@@ -1,67 +1,90 @@
-# Transport Layer
-- The main role of the transport layer is to transport communication between 2 networked devices, ip layer enables network connectivity but the transport layer is the one connecting source and destination applications 
-- When an application at the source host generates data all the applications needs to know is the name of the destination host and which application is running on the destination host
-- Application use names rather than destination ip's while the DNS takes care of the translation from the name to the ip address
-- The application has no regards to the host type, media type sent, routing taken, congestion in the network layer etc.
-- Transport layer is in charge making this link between application and network
-- In certain cases it will control the transmission setting for network changing capabilities 
+---
+tags:
+  - networking
+  - transport-layer
+  - week-11
+week: 11
+aliases:
+  - Week 11a
+  - Transport Layer
+  - Port Numbers
+---
 
+# Week 11a — Transport Layer & Port Numbers
 
-- Track individual or task performed: conversation between source application and destination application (web browser to a website)
-- Segement and reassemble data - when application at the start host generate a data stream the data layer needs to prepare to send across the network and made into a proper segement size to carry across the network in the payload of a layer 3 packet
-- The Destination the receive and transport layer will re assemble the data stream in the layer of the receiving host 
-- Uniquely identify each application and conversation concurrently happening between app using source and destination port (TCP/UDP) 
+> **Source:** Lecture 11a — TNE10006/TNE60006 Networks and Switching
 
-- Primary role Allows application to communicate between different categories applications (or transport layer protocols) 
+## Overview
 
+The transport layer (Layer 4) sits above IP (Layer 3) and enables communication between **applications** on different devices. While IP gets packets from host to host, the transport layer delivers data to the correct **application** on each host.
 
-- There are applications that require fast tranmission with low overhead with priority to send data receives a real time transmission?
-- This type of transmission wouldn't want a lot of control mechanisms or overhead - checksum or acknowledgement data since it would slow down the type of connection
-- Real Time transmission should always priortize fast transmission over reliability 
-- Reliable connections would be desireable to have Reception acknowledgement to retransmit the data, meaning more overhead with more controlled fields to transport layer fields 
+| Layer | Role |
+|-------|------|
+| Network (IP) | Host-to-host delivery |
+| Transport | Application-to-application delivery |
 
+---
 
-- 2 Distinct transport layer protocol - UDP (user datagram protocol) required often real time transmission
-- TCP (Transmission control protocol) - Reliable connection
-- The chosen protocol between UDP and TCP has an impact on how an application performs under network conditions
+## Responsibilities of the Transport Layer
 
-UDP doesn't guarnatee that the data will be received but still implements tracking of conversation and use port and src and destination 
-It segements the data stream (Datagram) to appropriate sizes segements when used - no additional overhead (Src and destination port in layer 4 header to identify)
+### Application Identification
 
-TCP/IP increases overhead and complicity to segements meant - the header is just like UDP with added acceptance knowdedgement and data tracking mechansims
+- Applications use **names** (not IP addresses) — DNS handles name-to-IP translation
+- The transport layer connects source and destination applications, abstracting away host type, media, routing, and network congestion
+- Each conversation between a source and destination application is tracked independently
 
-[Claude gimme an example where UDP and TCP/IP Would be helpful]
+### Segmentation & Reassembly
 
-depends on the requirements of the payload and the traffic being carried
-Other transport layer protocols do exist.
+- Application data streams are **segmented** into appropriate-sized units for network transmission
+- Each segment is carried in the payload of a Layer 3 packet
+- The receiving transport layer **reassembles** the data stream before passing it to the application
 
-Both TCP & UDP performs port numbering each layer 4 segement will have a src and destination port number in the header and how they are identified
+### Multiplexing
 
-Port numbering each segement allows network host to concurrently handle conversations and application to use the same infrastructure
+- Multiple applications can communicate concurrently over the same network interface
+- Each conversation is uniquely identified by a **tuple**: (Source IP, Source Port, Destination IP, Destination Port)
 
-Different application are assigned different port number at source and destinatinon host and inserted at the layer 4 header
+---
 
-The server side application usually assign a well known port or a registered port 
-port 80 for http servers
-port 1110 pop3 
-port 531 Internet Message (IM)
+## The Two Transport Protocols
 
-Client applications are often random within a particular range f
+There are two distinct transport layer protocols, chosen based on application requirements:
 
-Transport layer supports concurrent applications with a tuple 
+| Protocol | Type | Best For |
+|----------|------|----------|
+| **[[Week 11b\|UDP]]** | Connectionless, best-effort | Real-time transmission, low latency |
+| **[[Week 12a\|TCP]]** | Connection-oriented, reliable | Correctness, ordered delivery |
 
-Tuple: A pair of a Source and destination IP's and port's 
-Uniquely identifers single streams of communications
+- **Real-time applications** (VoIP, video streaming) prioritise speed over reliability — they benefit from UDP's low overhead
+- **Reliable applications** (web, file transfer, email) need acknowledgement, retransmission, and ordering — they use TCP
 
-Server side ports are standardized while client side is randomly generated
+The choice of protocol significantly impacts application performance under network conditions.
 
-Destination port | source port 
+---
 
-Port number diagram
-range 106535
+## Port Numbers
 
-Insert table about port numbers
+Both TCP and UDP use **port numbers** to multiplex multiple services:
 
-UDP ports
+- 16-bit values (0–65535)
+- Each segment carries a **source port** and **destination port** in its header
+- Server-side applications use **well-known** or **registered** ports
+- Client applications use **ephemeral** (randomly assigned) ports
 
-There are combined ports for TCP and UDP   
+| Type | Range | Examples |
+|------|-------|----------|
+| Well-known | 0–1023 | HTTP (80), HTTPS (443), DNS (53) |
+| Registered | 1024–49151 | |
+| Ephemeral | 49152–65535 | Client-side random ports |
+
+> [!note] Many ports are registered for both TCP and UDP (e.g. DNS uses port 53 for both, but typically runs over UDP).
+
+---
+
+## Related Notes
+
+- [[Week 11b]] — UDP protocol details
+- [[Week 12a]] — TCP fundamentals
+- [[TCP vs UDP]] — Comparison of the two transport protocols
+- [[TCP Header Format]] — TCP header fields
+- [[Lecture-02b]] — Ethernet, CSMA/CD, MAC addressing (Layer 2 foundations)

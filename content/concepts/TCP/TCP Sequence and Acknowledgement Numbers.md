@@ -133,4 +133,5 @@ Server ACKs:  ACK = 5001   ← FIN consumed seq 5000
 - [[TCP Three-Way Handshake]] — Where ISNs are established
 - [[TCP Window Size and Sliding Window]] — How sequence numbers interact with the window
 - [[TCP Connection Termination]] — How FIN consumes a sequence number
+- [[Week 11a]] — Transport Layer fundamentals, port numbers
 - [[Week 12b]] — Parent note
