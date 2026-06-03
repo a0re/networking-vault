@@ -34,6 +34,8 @@ PVST+ runs an **independent 802.1D STP instance for each VLAN**. This enables:
 
 ### Extended System ID
 
+![](../assets/images/extended-system-id.png)
+
 To make BIDs unique per VLAN, PVST+ extends the Bridge Priority field:
 
 ```
@@ -114,6 +116,8 @@ spanning-tree bpduguard enable
 ---
 
 ## Load Balancing with PVST+
+
+![](../assets/images/pvst-load-balancing.png)
 
 By configuring different root bridges per VLAN, you can distribute traffic across multiple uplinks:
 

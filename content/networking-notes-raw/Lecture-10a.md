@@ -9,6 +9,8 @@
 
 ## IPv6 Features
 
+[Insert diagram: IPv4 vs IPv6 header comparison showing simplified IPv6 header]
+
 - Global reachability and flexibility.
 - Aggregation.
 - Multi-home.
@@ -23,6 +25,8 @@
   - Smaller fields.
 
 ## IPv6 Representations
+
+[Insert diagram: IPv6 address format showing hextets, nibbles, and leading zero abbreviation]
 
 - 4 bits or a nibble is a single hexadecimal digit.
 
@@ -39,6 +43,8 @@
 - Omit 0 segments to (::) double colon only once, other 0's would be :0:.
 
 ## IPv6 Subnet Mask - Prefix Length
+
+[Insert diagram: IPv6 address structure - 64-bit prefix + 64-bit interface ID]
 
 - IPv6 uses slash notation for prefix length.
 - Typical prefix length is /64.

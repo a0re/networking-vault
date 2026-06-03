@@ -105,6 +105,8 @@ PC1 ←--- can't hear each other ---→ PC2
 
 ## Wireless Network Architectures
 
+![](../assets/images/wireless-architectures.png)
+
 ### Ad Hoc Mode (IBSS)
 - Devices connect **directly** to each other without an access point
 - Example: tethering / personal hotspot
@@ -122,6 +124,8 @@ Clients connect through an **access point**:
 | **ESA (Extended Service Area)** | The combined coverage area of all APs in an ESS |
 
 ### ESS and Roaming
+
+![](../assets/images/ess-roaming.png)
 
 When a single AP doesn't provide enough coverage, multiple APs are deployed with:
 - The **same SSID** - clients see one network name
@@ -148,6 +152,8 @@ When a single AP doesn't provide enough coverage, multiple APs are deployed with
 | **Active** | Client broadcasts **probe request** frames on multiple channels; APs that match respond |
 
 ### AP Association Process
+
+![](../assets/images/ap-association-process.png)
 
 1. **Probe** - client sends 802.11 probe request
 2. **Authentication** - client authenticates with the AP

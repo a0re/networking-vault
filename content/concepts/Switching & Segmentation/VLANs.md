@@ -20,6 +20,8 @@ aliases:
 
 ## What Is a VLAN?
 
+![](../assets/images/vlan-logical-partition.png)
+
 A **VLAN (Virtual LAN)** is a logical partition of a Layer 2 network. It creates **separate broadcast domains** on the same physical switch infrastructure without requiring separate physical hardware.
 
 - Devices in different VLANs **cannot communicate at Layer 2** - a router is required
@@ -79,6 +81,8 @@ PC → [untagged] → Switch port → [tagged internally] → switch processing 
 ---
 
 ## 802.1q Tagging
+
+![](../assets/images/8021q-frame-tag.png)
 
 The IEEE standard for VLAN tagging. A **4-byte tag** is inserted into the Ethernet frame between the Source MAC and the EtherType fields:
 

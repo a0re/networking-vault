@@ -58,6 +58,8 @@ Each packet is forwarded **independently** through the network:
 
 ## Packet vs Connection-Based Layer 3
 
+![](../assets/images/packet-vs-connection-layer3.png)
+
 | Type | Behaviour |
 |------|-----------|
 | **Packet-based** (IP) | Each packet routed independently; path may vary; simpler |
@@ -66,6 +68,8 @@ Each packet is forwarded **independently** through the network:
 ---
 
 ## Handling Network Problems
+
+![](../assets/images/network-layer-problems.png)
 
 | Problem | IP Behaviour | Who Handles It |
 |---------|-------------|----------------|

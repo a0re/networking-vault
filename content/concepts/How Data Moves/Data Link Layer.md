@@ -20,6 +20,8 @@ Layer 2 is the **boundary between software and physical hardware**. It:
 
 ## Two Sublayers
 
+![](../assets/images/dll-sublayers-llc-mac.png)
+
 The Data Link Layer is divided into two sublayers so that upper-layer protocols are decoupled from the physical medium:
 
 ### LLC - Logical Link Control (Upper sublayer, software)
@@ -40,6 +42,8 @@ The Data Link Layer is divided into two sublayers so that upper-layer protocols 
 
 ## Frame Structure
 
+![](../assets/images/dll-frame-structure.png)
+
 ```
 [ Frame Header ] [ Packet / Payload ] [ Frame Trailer ]
 ```
@@ -58,6 +62,8 @@ The Data Link Layer is divided into two sublayers so that upper-layer protocols 
 ---
 
 ## Media Access Control
+
+![](../assets/images/csma-cd-ca-flow.png)
 
 When multiple nodes share a medium, they need rules to avoid collisions:
 
@@ -97,6 +103,8 @@ The Data Link Layer detects (but does not correct) errors:
 
 ## Network Topologies
 
+![](../assets/images/network-topologies.png)
+
 **Physical topology** - how nodes are physically connected by media.
 
 **Logical topology** - how the Data Link Layer arranges data flow, independent of physical wiring.
@@ -110,6 +118,8 @@ The Data Link Layer detects (but does not correct) errors:
 ---
 
 ## Duplex Modes
+
+![](../assets/images/duplex-modes.png)
 
 | Mode | Description |
 |------|-------------|

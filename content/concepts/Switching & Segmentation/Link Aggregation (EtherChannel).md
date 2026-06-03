@@ -10,6 +10,8 @@ aliases: [EtherChannel, Link Aggregation, LACP, PAgP, Port Channel, LAG]
 
 ## What Is Link Aggregation?
 
+![](../assets/images/etherchannel-bundle.png)
+
 Link aggregation (EtherChannel on Cisco) bundles **multiple physical links** between two switches into a **single logical link**. The benefits are:
 
 - **Higher effective bandwidth** - multiple 1 Gb/s links appear as one higher-bandwidth link

@@ -23,6 +23,8 @@ Production networks aim for **"five nines" availability** - 99.999% uptime, whic
 
 ## The Problem with Layer 2 Redundancy
 
+![](../assets/images/layer2-loop-broadcast-storm.png)
+
 Unlike Layer 3 (where TTL prevents infinite loops), **Ethernet frames have no Time-To-Live**. If redundant paths exist in a Layer 2 network without a loop-prevention mechanism, traffic circulates forever.
 
 ### Broadcast Storms

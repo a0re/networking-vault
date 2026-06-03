@@ -40,6 +40,8 @@ Drivers of demand:
 
 ## Address Format
 
+![](../assets/images/ipv6-address-format.png)
+
 IPv6 addresses are **128 bits**, written as **8 groups of 4 hexadecimal digits** separated by colons:
 
 ```
@@ -106,6 +108,8 @@ The typical prefix length is **/64**:
 
 ## IPv6 Address Types
 
+![](../assets/images/ipv6-address-types.png)
+
 ### Reserved / Special Addresses
 
 | Address | Purpose |
@@ -163,6 +167,8 @@ The 16 bits between the /48 site prefix and the /64 interface ID give an organis
 ---
 
 ## Dual Stack
+
+![](../assets/images/dual-stack.png)
 
 During the IPv4→IPv6 transition, devices run **dual stack** - both IPv4 and IPv6 simultaneously:
 - A device has both an IPv4 and IPv6 address

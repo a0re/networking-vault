@@ -23,6 +23,8 @@ Core threats:
 
 ### Evil Twin Attack
 
+![](../assets/images/evil-twin-attack.png)
+
 A **man-in-the-middle** attack where an attacker sets up a rogue AP with the **same SSID** as a legitimate network.
 
 1. Attacker places a rogue AP (often with stronger signal) near the target
@@ -84,6 +86,8 @@ Current standards. Two modes:
 | **Enterprise** | Organisations | Per-user credentials via **RADIUS** server |
 
 ### Enterprise Authentication (802.1X + RADIUS)
+
+![](../assets/images/8021x-radius-flow.png)
 
 - **RADIUS** = Remote Authentication Dial-In User Service
 - Each user has their own credentials - not a shared password

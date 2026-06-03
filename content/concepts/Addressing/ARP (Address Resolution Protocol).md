@@ -20,6 +20,8 @@ Both are required because of the layered architecture - a router looks at IP add
 
 ## How ARP Works
 
+![](../assets/images/arp-request-reply.png)
+
 ARP is a **Layer 2 broadcast** process - the request goes to all hosts on the local segment (`FF:FF:FF:FF:FF:FF`). It is encapsulated in an Ethernet frame (no IP header - it operates below IP).
 
 ### ARP Request & Reply Sequence
@@ -68,6 +70,8 @@ When Host A wants to reach Host B on the **same subnet**:
 
 When Host A wants to reach a host **on a different network**:
 
+![](../assets/images/arp-external-routing.png)
+
 1. Host A determines the destination is outside its subnet (by comparing against its subnet mask)
 2. Host A sends the packet to its **default gateway** (router)
 3. Host A ARP-requests the **router's MAC address** (not the remote host's MAC)
@@ -91,6 +95,8 @@ When Host A wants to reach a host **on a different network**:
 ---
 
 ## ARP & Routing Interaction
+
+![](../assets/images/arp-per-hop.png)
 
 At every router hop:
 1. The router ARPs for the **next-hop IP** (another router or the final destination)

@@ -18,6 +18,8 @@ Modern Ethernet switches no longer strictly *require* media access control (each
 
 ## Ethernet Standards
 
+![](../assets/images/ieee-802-standards.png)
+
 Ethernet is a **family of standards**, not a single protocol. Two IEEE families cover it:
 
 | Standard | Layer | Covers |
@@ -41,6 +43,8 @@ A **MAC address** is a Layer 2 hardware identifier burned into a NIC by the manu
 
 ### Structure
 
+![](../assets/images/mac-address-format.png)
+
 ```
 [ OUI (3 bytes) ][ NIC Identifier (3 bytes) ]
   ^                ^
@@ -55,6 +59,8 @@ A **MAC address** is a Layer 2 hardware identifier burned into a NIC by the manu
 ## Ethernet Frame Fields
 
 ### Ethernet II (used in TCP/IP networks)
+
+![](../assets/images/ethernet-ii-frame.png)
 
 | Field | Size | Purpose |
 |-------|------|---------|
@@ -78,6 +84,8 @@ The minimum exists because CSMA/CD requires the frame to be long enough that bot
 ---
 
 ## Address Types
+
+![](../assets/images/unicast-broadcast-multicast.png)
 
 ### Unicast
 - One sender → one specific receiver

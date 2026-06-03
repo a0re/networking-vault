@@ -44,6 +44,8 @@ The default gateway is the router's IP address on the local subnet. Any traffic 
 
 ## Packet Traversal: What Changes at Each Hop
 
+![](../assets/images/packet-traversal-per-hop.png)
+
 This is a crucial concept - understand what stays the same and what changes as a packet crosses routers:
 
 | Field | Behaviour |
@@ -74,6 +76,8 @@ Hop 3 (Router 2 → Host B):
 ---
 
 ## Routing Table
+
+![](../assets/images/routing-table-structure.png)
 
 Routers build local routing tables from:
 - **Directly connected** networks (C routes) - auto-populated when interfaces are configured

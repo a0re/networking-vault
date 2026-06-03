@@ -20,6 +20,8 @@ A protocol defines communication between two devices through a common standard. 
 
 ## TCP/IP Model
 
+![](../assets/images/tcp-ip-model.png)
+
 The Internet model in common use. An **open standard** usable by any vendor.
 
 | Layer | Name | Function |
@@ -33,23 +35,27 @@ The Internet model in common use. An **open standard** usable by any vendor.
 
 ## OSI Model (Reference Model)
 
+![](../assets/images/osi-model.png)
+
 A more detailed 7-layer model used as a **reference** - it describes networking processes generically rather than implementing them directly.
 
-| Layer | Name | Type |
-|-------|------|------|
-| 7 | Application | Software |
-| 6 | Presentation | Software |
-| 5 | Session | Software |
-| 4 | Transport | Software |
-| 3 | Network | Software |
-| 2 | Data Link | Hardware boundary |
-| 1 | Physical | Hardware |
+| Layer | Name         | Type              |
+| ----- | ------------ | ----------------- |
+| 7     | Application  | Software          |
+| 6     | Presentation | Software          |
+| 5     | Session      | Software          |
+| 4     | Transport    | Software          |
+| 3     | Network      | Software          |
+| 2     | Data Link    | Hardware boundary |
+| 1     | Physical     | Hardware          |
 
 > [!tip] The Data Link Layer is the boundary between software and physical hardware.
 
 ---
 
 ## Why Layered Models?
+
+![](../assets/images/layered-model-benefits.png)
 
 - **Standardisation** - enables competition between vendors; any compliant device works
 - **Focused design** - each layer handles a specific, well-defined task

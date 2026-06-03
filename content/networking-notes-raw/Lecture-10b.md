@@ -2,6 +2,8 @@
 
 **Reserved address:**
 
+[Insert diagram: IPv6 address types with prefix ranges and visual scope mapping]
+
 - Unspecified: `::/128`
 - Loopback: `::1/128`
 - Multicast: `FF00::/8` --> `FFFF`
@@ -25,6 +27,8 @@
 - Embedded IPv4.
 
 ## Global Unicast Hierarchy
+
+[Insert diagram: IPv6 global unicast address hierarchy from IANA to subnet prefix]
 
 - IANA: /16
 - Registry: /23

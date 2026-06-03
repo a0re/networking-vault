@@ -10,6 +10,8 @@ aliases: [IPv4, IP Address, Subnet Mask, CIDR, Fragmentation, NAT, Private IP]
 
 ## Address Structure
 
+![](../assets/images/ipv4-address-structure.png)
+
 IPv4 addresses are **32-bit values**, written as four 8-bit octets in dotted decimal notation:
 
 ```
@@ -44,6 +46,8 @@ The `/24` means the first 24 bits are the network portion. The remaining 8 bits 
 ---
 
 ## Legacy Classful Addressing
+
+![](../assets/images/classful-addressing.png)
 
 Before CIDR, the first octet determined the class:
 
@@ -89,6 +93,8 @@ Not all addresses are routable on the Internet. Private ranges are for internal 
 
 ## IPv4 Packet Header Fields
 
+![](../assets/images/ipv4-packet-header.png)
+
 Minimum header size: **20 bytes** (without optional fields).
 
 | Field | Size | Purpose |
@@ -124,6 +130,8 @@ The **Fragment Offset** field tells the receiver where this fragment fits in the
 
 ### Fragmentation Example
 
+![](../assets/images/ip-fragmentation.png)
+
 ```
 Original packet: 4000 bytes data, MTU = 1500 bytes
 Header = 20 bytes → usable data per fragment = 1480 bytes
@@ -136,6 +144,8 @@ Fragment 3: bytes 2960–3999, offset = 370, MF=0
 ---
 
 ## Transmission Types
+
+![](../assets/images/transmission-types.png)
 
 | Type | Sender | Receivers | Example |
 |------|--------|-----------|---------|

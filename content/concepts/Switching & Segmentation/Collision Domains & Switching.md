@@ -10,6 +10,8 @@ aliases: [Switching, MAC Table, CAM Table, Collision Domain, Bridge, Frame Forwa
 
 ## Collision Domains
 
+![](../assets/images/collision-vs-broadcast-domains.png)
+
 A **collision domain** is any portion of a network where two devices transmitting simultaneously will cause a collision. On a shared medium (like a hub), all connected devices share one collision domain.
 
 The number of devices in a collision domain matters: **more devices = more collisions = worse performance**.
@@ -62,6 +64,8 @@ The switch builds its MAC address table dynamically by **observing source MAC ad
 ---
 
 ## Frame Forwarding Methods
+
+![](../assets/images/frame-forwarding-methods.png)
 
 Switches use different strategies with different speed/reliability tradeoffs:
 

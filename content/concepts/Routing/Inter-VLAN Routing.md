@@ -27,6 +27,8 @@ To route between VLANs, traffic must pass through a **Layer 3 device** (a router
 
 ## Method 1: Router-on-a-Stick (ROAS)
 
+![](../assets/images/router-on-a-stick.png)
+
 A single router port is connected to the switch via a **trunk link**. The router port is divided into **sub-interfaces**, each associated with a specific VLAN.
 
 ```
@@ -61,6 +63,8 @@ Router
 ---
 
 ## Method 2: Layer 3 Switch with SVIs
+
+![](../assets/images/layer3-switch-svi.png)
 
 A **Layer 3 switch** can route natively using **Switch Virtual Interfaces (SVIs)** - logical interfaces associated with each VLAN that act like router interfaces.
 

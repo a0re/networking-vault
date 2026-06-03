@@ -10,11 +10,15 @@ aliases: [PDU, Protocol Data Unit, Encapsulation]
 
 ## What Is Encapsulation?
 
+![](../assets/images/encapsulation-flow.png)
+
 Each layer of the protocol stack **wraps the data from the layer above** with its own header (and sometimes trailer) before passing it down. This is called encapsulation. The reverse - stripping headers on the receiving end - is **decapsulation**.
 
 ---
 
 ## Protocol Data Units (PDUs)
+
+![](../assets/images/pdu-hierarchy.png)
 
 Each layer has its own name for the unit of data it works with:
 

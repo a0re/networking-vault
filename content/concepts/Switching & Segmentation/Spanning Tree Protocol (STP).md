@@ -3,7 +3,7 @@ tags: [networking, stp, spanning-tree, layer-2, week-8]
 week: 8
 aliases: [STP, Spanning Tree, BID, Bridge ID, Root Bridge, Root Port, Designated Port, BPDU]
 ---
-
+f
 # Spanning Tree Protocol (STP)
 
 > **Source:** [[Week 8]]
@@ -17,6 +17,8 @@ STP prevents [[Layer 2 Redundancy#The Problem with Layer 2 Redundancy|Layer 2 br
 ---
 
 ## Bridge ID (BID)
+
+![](../assets/images/stp-bridge-id.png)
 
 Every switch has a **Bridge ID** used in STP elections:
 
@@ -80,6 +82,8 @@ For every **link segment** in the network:
 ---
 
 ## STP Port States
+
+![](../assets/images/stp-port-state-transitions.png)
 
 | State | Can Forward Data? | Can Learn MACs? | Notes |
 |-------|-------------------|-----------------|-------|

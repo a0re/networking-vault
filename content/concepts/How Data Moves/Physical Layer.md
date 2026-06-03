@@ -35,6 +35,8 @@ Signals are placed **one at a time** onto the medium. The receiver decodes the s
 
 ## Bandwidth, Throughput & Goodput
 
+![](../assets/images/bandwidth-throughput-goodput.png)
+
 These three terms are often confused:
 
 | Term | Definition |
@@ -53,6 +55,8 @@ These three terms are often confused:
 **Signalling** physically represents that bit stream on the medium (voltage levels, light pulses, radio amplitude/frequency).
 
 ### Manchester Encoding *(optional/legacy)*
+
+![](../assets/images/manchester-encoding.png)
 
 A method of encoding digital data where each bit is represented by a signal **transition**:
 

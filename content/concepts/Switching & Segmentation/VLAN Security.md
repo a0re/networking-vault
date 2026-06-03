@@ -18,6 +18,8 @@ Port security is **disabled by default** on Cisco switches.
 
 ## Layer 2 Attack Types
 
+![](../assets/images/layer2-attacks.png)
+
 ### MAC Address Flooding
 - An attacker sends frames with many **fake source MAC addresses**
 - The switch's CAM table fills up (limited memory)
