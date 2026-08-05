@@ -1,12 +1,4 @@
-
-
-
-
 ### Display Brief
-
-```
-
-```
 
 ### Clean Network
 
@@ -24,16 +16,11 @@ arp -d
 arp -a
 ```
 
-
-
 ### Privilege Escalation
-
 
 ### Set-Up VLAN
 
-
 ### Disable DNS
-
 
 ### Enable SSH
 > Note: Disabling Telnet is not required to enable SSH but good practice
@@ -49,15 +36,6 @@ end
 
 
 ### Virutal Machine Launcher 
-
-
-
-
-
-
-
-
-
 ### Setting Hostname on a Switch - conf t
 
 ```
@@ -94,4 +72,3 @@ keywords
 ena 
 conf t
 line console 0 
-```

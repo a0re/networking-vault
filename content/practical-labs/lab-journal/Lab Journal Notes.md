@@ -17,16 +17,7 @@ The PC ethernet cable corresponds to the number on the computer [4] should only 
 ``ena [enable]``
 `conf t` | `[configure terminal]`
 
-
-
-|            |                        |
-| ---------- | ---------------------- |
-| command    | description            |
-| ``conf t`` | ``configure terminal`` |
-
-
 ### Enable Telnet Access
-
 ### Enable SSH Access
 
 ``interface range gigabitethernet x/x/x - [range] 
