@@ -54,7 +54,7 @@ exit
 
 ### `show ip interface brief`
 
-> Press Enter: Shows the remaining switches 
+Press Enter: Shows the remaining switches 
 
 | Interface          | IP Address  | OK? | Method | Status                | Protocol |
 | ------------------ | ----------- | --- | ------ | --------------------- | -------- |
