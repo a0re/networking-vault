@@ -1,21 +1,5 @@
 --- 
 
-| Command                                | Description                                                                                                                   |
-| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| `ena`                                  | Short for `enable`, this command is used to enter privileged EXEC mode, which allows access to more advanced commands.        |
-| `conf t`                               | `configure terminal`, this command enters global configuration mode where you can make changes to the device's configuration. |
-| `show vlan brief`                      | Displays a brief summary of VLANs configured on the switch, including VLAN IDs, names, and their statuses.                    |
-| `show ip interface brief`              |                                                                                                                               |
-| `show running config`                  |                                                                                                                               |
-| `show startup config`                  |                                                                                                                               |
-| ``arp -a``                             |                                                                                                                               |
-| ``arp -d``                             |                                                                                                                               |
-| ``copy running-config startup-config`` |                                                                                                                               |
-| ``line console 0``                     |                                                                                                                               |
-|                                        |                                                                                                                               |
-|                                        |                                                                                                                               |
-|                                        |                                                                                                                               |
-|                                        |                                                                                                                               |
 
 Set User Mode Password
 ```
